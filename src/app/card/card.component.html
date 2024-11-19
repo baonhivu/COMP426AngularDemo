@@ -1,0 +1,8 @@
+<div>
+    <button *ngIf="card.isSelected" class="selected" (click)="handleSelection()">
+        <img [src]="getImageUrl()"/>
+    </button>
+    <button *ngIf="!card.isSelected" class="not-selected" (click)="handleSelection()">
+        <img [src]="getImageUrl()"/>
+    </button>
+</div>

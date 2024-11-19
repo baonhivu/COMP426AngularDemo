@@ -1,0 +1,3 @@
+<div class="board"> 
+    <app-card *ngFor="let card of getCards()" [card]="card" (selectCard)="handleCardSelectionForPlaying($event)" ></app-card>
+</div>
